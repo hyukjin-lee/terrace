@@ -97,7 +97,7 @@ const MyApp: NextComponentType<AppContext, AppInitialProps, MyAppProps> = (props
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
         />
-        <title>:: 김명재, Myeongjae Kim</title>
+        <title>:: 이혁진, Hyeokjin Lee</title>
       </Head>
 
       <DefaultSeo
@@ -105,13 +105,13 @@ const MyApp: NextComponentType<AppContext, AppInitialProps, MyAppProps> = (props
           type: "website",
           locale: "ko_KR",
           url: DOMAIN,
-          site_name: "김명재, Myeongjae Kim",
+          site_name: "이혁진, Hyeokjin Lee",
           images: [
             {
               url: "https://cdn.myeongjae.kim/blog/default-thumbnail.png",
               width: 400,
               height: 400,
-              alt: "김명재, Myeongjae Kim",
+              alt: "이혁진, Hyeokjin Lee",
             },
           ],
         }}
