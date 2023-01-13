@@ -20,5 +20,5 @@ export const Endpoints = {
 };
 
 export const TITLE_POSTFIX = " :: 김명재, Myeongjae Kim";
-export const API_HOST = "https://myeongjae-kim.herokuapp.com/api";
+export const API_HOST = "https://rough-leaf-7947.fly.dev/";
 export const GA_TRACKING_CODE = "G-WK6D5JS46W";
