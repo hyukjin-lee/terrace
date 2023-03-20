@@ -75,6 +75,7 @@ const BlogDetailPage = () => {
       blogArticle={{...blogDetail, prev, next}}
     />
     <Comment identifier={`blog${subPath}`} />
+    {/* eslint-disable-next-line react/no-unknown-property */}
     <style jsx global>{`
 #comment-container {
   max-width: ${theme.spacing(100)};

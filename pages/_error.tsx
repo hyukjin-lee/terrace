@@ -99,6 +99,7 @@ const ErrorPage = ({ statusCode, title: titleOrigin }: ErrorProps) => {
         </div>
       </div>
 
+      {/* eslint-disable-next-line react/no-unknown-property */}
       <style jsx global>{`
 /* The rainbow coloring codes are from https://codepen.io/joashp/pen/dYXNwj */
 

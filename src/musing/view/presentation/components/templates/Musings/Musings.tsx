@@ -30,6 +30,7 @@ const Musings = ({ musings }: MusingsProps) => {
       </div>
       <div/>
     </div>
+    {/* eslint-disable-next-line react/no-unknown-property */}
     <style jsx global>{`
         h1 {
           font-family: 'Bad Script' !important;

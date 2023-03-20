@@ -2,6 +2,7 @@ import * as React from "react";
 
 const PrismjsThemeSupport = () => {
   return <>
+    {/* eslint-disable-next-line react/no-unknown-property */}
     <style global={"true" as unknown as boolean}>
       {bright}
     </style>

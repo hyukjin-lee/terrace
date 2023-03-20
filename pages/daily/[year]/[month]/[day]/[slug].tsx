@@ -35,6 +35,7 @@ const DailyDetailPage = () => {
     <HeadTitle title="Daily" />
     <DailyDetail daily={dailyDetail} />
     <Comment identifier={`daily${subPath}`} />
+    {/* eslint-disable-next-line react/no-unknown-property */}
     <style jsx global>{`
 #comment-container {
   max-width: ${theme.spacing(62.5)};

@@ -8,8 +8,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "npm run lint && npm run test && next build",
-    "prestart": "./scripts/prestart.sh",
-    "start": "NODE_ENV=production next start -p $PORT",
+    "start": "NODE_ENV=production next start -p 8080",
     "start:local": "NODE_ENV=production next start",
     "lint": "eslint . --ext .ts,.tsx --fix && tsc --noEmit",
     "test": "jest",
