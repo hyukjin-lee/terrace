@@ -29,7 +29,7 @@ const Places = () => {
     <PageTitle title="places" />
     <Typography align="center" className={classes.content}>where I have been</Typography>
     <div className={classes.mapContainer}>
-      <iframe className={classes.map} src="https://api.mapbox.com/styles/v1/myeongjae/cjl07pcz14j9t2sqmsp0swqhg.html?fresh=true&title=true&access_token=pk.eyJ1IjoibXllb25namFlIiwiYSI6ImNqbDAzdWFhZjEwd2kza3Bncmo0emFtM2wifQ.j2Y4BLsTivJxT7BU_bWFKg" />
+      <iframe className={classes.map} src="https://api.mapbox.com/styles/v1/hyeokjin-lee/clfgwc9yl002201mfpwgh8snv.html?fresh=true&title=true&access_token=pk.eyJ1IjoiaHllb2tqaW4tbGVlIiwiYSI6ImNsZmd3NXpxczFkemgzcG51eWcyYm1keTUifQ.n9r6mGWFGEy5T5E2ZLsQ7Q" />
     </div>
   </div>;
 };

@@ -25,7 +25,7 @@ const HomeButton = () => {
     <Button color="inherit" classes={{
       root: classes.button,
       colorInherit: classes.buttonInherit
-    }}>myeongjae kim</Button>
+    }}>hyeokjin lee</Button>
   </Link>;
 };
 

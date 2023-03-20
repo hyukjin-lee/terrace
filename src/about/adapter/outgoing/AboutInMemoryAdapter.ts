@@ -3,10 +3,10 @@ import {About} from "../../domain/About";
 
 export class AboutInMemoryAdapter implements AboutLoadPort {
   public get = (): Promise<About> => Promise.resolve({
-    profile: "https://s.gravatar.com/avatar/4e9916981adb804e1db438874e3789c6?s=400#shadow#round",
+    profile: "https://s.gravatar.com/avatar/afe249c2d2c2c95d078179a42a940c42?s=400#shadow#round",
     name: {
-      en: "Myeongjae Kim",
-      kr: "김명재"
+      en: "HyeokJin Lee",
+      kr: "이혁진"
     },
     descriptions: [{
       icon: "EmojiPeople",
@@ -14,7 +14,7 @@ export class AboutInMemoryAdapter implements AboutLoadPort {
       href: ""
     }, {
       icon: "Room",
-      label: "Seoul, Korea",
+      label: "Suwon, Korea",
       href: "/places"
     }, {
       icon: "DeveloperBoard",
@@ -22,16 +22,16 @@ export class AboutInMemoryAdapter implements AboutLoadPort {
       href: ""
     }, {
       icon: "Code",
-      label: "github/myeongjae-kim",
-      href: "https://github.com/myeongjae-kim"
+      label: "github/hyukjin-lee",
+      href: "https://github.com/hyukjin-lee"
     }, {
       icon: "Email",
-      label: "dev@myeongjae.kim",
-      href: "mailto:dev@myeongjae.kim"
+      label: "gogokow27@gmail.com",
+      href: "mailto:gogokow27@gmail.com"
     }, {
       icon: "Create",
-      label: "blog.myeongjae.kim",
-      href: "https://blog.myeongjae.kim"
+      label: "blog.hyeokin.lee",
+      href: "https://blog.hyeokin.lee"
     },]
   });
 }

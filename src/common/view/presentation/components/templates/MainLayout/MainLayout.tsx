@@ -1,6 +1,5 @@
 import {createStyles, makeStyles} from "@mui/styles"; //이거 건들면 깨진다. 나중에 바꿔뵉
 import React, {ReactNode} from "react";
-import FooterContent from "./FooterContent";
 import TopBar from "./TopBar";
 import {darkThemeV5} from "../../themes";
 import {Theme} from "@mui/material";
@@ -100,7 +99,6 @@ const MainLayout = ({ children }: { children?: ReactNode | undefined }) => {
         {children}
       </main>
       <footer className={classes.footer}>
-        <FooterContent />
       </footer>
     </div>
   );
