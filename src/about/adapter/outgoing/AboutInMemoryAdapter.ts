@@ -30,8 +30,8 @@ export class AboutInMemoryAdapter implements AboutLoadPort {
       href: "mailto:gogokow27@gmail.com"
     }, {
       icon: "Create",
-      label: "blog.hyeokin.lee",
-      href: "https://blog.hyeokin.lee"
+      label: "normal-developer.facebook",
+      href: "https://www.facebook.com/NormalDeveloper"
     },]
   });
 }
