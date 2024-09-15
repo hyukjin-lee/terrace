@@ -14,12 +14,12 @@ export class AboutInMemoryAdapter implements AboutLoadPort {
       href: ""
     }, {
       icon: "Room",
-      label: "Suwon, Korea",
+      label: "South Korea",
       href: "/places"
     }, {
       icon: "DeveloperBoard",
       label: "Résumé",
-      href: ""
+      href: "https://drive.google.com/file/d/17f6U-VfdXkTyQoNlLoAo4buR2myqsNDF/view?usp=sharing"
     }, {
       icon: "Code",
       label: "github/hyukjin-lee",

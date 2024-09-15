@@ -82,7 +82,7 @@ const MyApp: NextComponentType<AppContext, AppInitialProps, MyAppProps> = (props
   });
 
   const [prefersDarkMode, toggleColorMode] = usePersistentDarkModePreference(
-    "@myeongjae.kim/PREFERS_DARK_MODE"
+    "@gogokow27.com/PREFERS_DARK_MODE"
   );
 
   const theme = React.useMemo(() => prefersDarkMode ? darkThemeV5 : brightThemeV5, [
@@ -108,7 +108,7 @@ const MyApp: NextComponentType<AppContext, AppInitialProps, MyAppProps> = (props
           site_name: "이혁진, Hyeokjin Lee",
           images: [
             {
-              url: "https://cdn.myeongjae.kim/blog/default-thumbnail.png",
+              url: "https://s.gravatar.com/avatar/afe249c2d2c2c95d078179a42a940c42?s=400#shadow%23round",
               width: 400,
               height: 400,
               alt: "이혁진, Hyeokjin Lee",
@@ -116,8 +116,8 @@ const MyApp: NextComponentType<AppContext, AppInitialProps, MyAppProps> = (props
           ],
         }}
         twitter={{
-          handle: "@myeongjae_kim",
-          site: "@myeongjae_kim",
+          handle: "@hyukhyukk",
+          site: "@hyukhyukk",
           cardType: "summary",
         }}
       />
