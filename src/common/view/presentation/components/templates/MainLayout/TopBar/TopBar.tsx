@@ -23,6 +23,9 @@ const items = [{
   href: ["/about", "/"],
   label: "About"
 }, {
+  href: ["/tech"],
+  label: "Tech"
+}, {
   href: ["/blog"],
   label: "Blog"
 }, {

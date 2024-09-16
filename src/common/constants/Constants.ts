@@ -5,6 +5,11 @@ export const Endpoints = {
 
   about: "/about",
 
+  tech: "/tech-articles",
+  "tech.detail": "/tech/detail",
+  "tech.create": "/tech/create",
+  "tech.update": "/tech/update",
+
   blog: "/blog-articles",
   "blog.detail": "/blog/detail",
   "blog.create": "/blog/create",

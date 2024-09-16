@@ -2,12 +2,14 @@ import {Container} from "inversify";
 import "reflect-metadata";
 import * as axiosModule from "src/infrastructure/remote-call/inversify";
 import * as aboutModule from "src/about/adapter/inversify";
+import * as techModule from "src/tech/adapter/inversify";
 import * as blogModule from "src/blog/adapter/inversify";
 import * as dailyModule from "src/daily/adapter/inversify";
 import * as musingModule from "src/musing/adapter/inversify";
 
 configure(() => {
   aboutModule.decorateClasses();
+  techModule.decorateClasses();
   blogModule.decorateClasses();
   dailyModule.decorateClasses();
   musingModule.decorateClasses();
@@ -18,6 +20,7 @@ export const container: Container = (() => {
   [
     axiosModule.bind,
     aboutModule.bind,
+    techModule.bind,
     blogModule.bind,
     dailyModule.bind,
     musingModule.bind,
