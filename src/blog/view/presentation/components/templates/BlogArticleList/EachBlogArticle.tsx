@@ -34,12 +34,12 @@ interface Props {
 }
 
 const EachBlogArticle = ({ blogArticle }: Props) => {
-  const { title, createdAt, uri } = blogArticle;
+  const { title, date, uri } = blogArticle;
   const classes = useStyles();
   return <Link href={uri}>
     <div className={classes.container}>
       <div className={classes.title}>{title}</div>
-      <div className={classes.date}>{formatDateTime(createdAt, "YYYY / MM / DD")}</div>
+      <div className={classes.date}>{formatDateTime(date, "YYYY / MM / DD")}</div>
     </div>
   </Link >;
 };

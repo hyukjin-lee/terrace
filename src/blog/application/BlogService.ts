@@ -13,7 +13,7 @@ export class BlogService implements BlogFindAllUseCase, BlogGetUseCase, BlogGetP
 
   private readonly defaultPrevOrNext: BlogArticlePrevOrNext = {
     id: "",
-    createdAt: "",
+    date: "",
     title: "",
     uri: "",
   };
@@ -28,7 +28,7 @@ export class BlogService implements BlogFindAllUseCase, BlogGetUseCase, BlogGetP
       .then(it => ({
         id: "" + it.id,
         seq: it.attributes.seq,
-        createdAt: it.attributes.createdAt,
+        date: it.attributes.date,
         updatedAt: it.attributes.updatedAt,
         title: it.attributes.title,
         slug: it.attributes.slug,
@@ -43,8 +43,8 @@ export class BlogService implements BlogFindAllUseCase, BlogGetUseCase, BlogGetP
         data: data.data.map(it => ({
           id: "" + it.id,
           seq: it.attributes.seq,
-          createdAt: it.attributes.createdAt,
-          uri: BlogArticle.createUri({createdAt: it.attributes.createdAt, slug: it.attributes.slug}),
+          date: it.attributes.date,
+          uri: BlogArticle.createUri({date: it.attributes.date, slug: it.attributes.slug}),
           title: it.attributes.title,
         })),
         meta: data.meta,
@@ -59,8 +59,8 @@ export class BlogService implements BlogFindAllUseCase, BlogGetUseCase, BlogGetP
   private convertListToPrevOrNext = (list: BlogArticleListStrapi): BlogArticlePrevOrNext =>
     ({
       id: "" + list.id,
-      createdAt: list.attributes.createdAt,
+      date: list.attributes.date,
       title: list.attributes.title,
-      uri: BlogArticle.createUri({createdAt: list.attributes.createdAt, slug: list.attributes.slug}),
+      uri: BlogArticle.createUri({date: list.attributes.date, slug: list.attributes.slug}),
     });
 }

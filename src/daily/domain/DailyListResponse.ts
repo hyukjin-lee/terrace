@@ -1,7 +1,7 @@
 export interface DailyListResponse {
   id: string;
   seq: number;
-  createdAt: string;
+  date: string;
   uri: string;
   title: string;
 }

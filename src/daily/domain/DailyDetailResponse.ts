@@ -1,7 +1,7 @@
 export interface DailyDetailResponse {
   id: string;
   seq: number;
-  createdAt: string;
+  date: string;
   updatedAt: string;
   title: string;
   slug: string;
@@ -11,7 +11,7 @@ export interface DailyDetailResponse {
 export const defaultDailyDetailResponseDto: DailyDetailResponse = {
   id: "",
   seq: -1,
-  createdAt: "",
+  date: "",
   updatedAt: "",
   title: "",
   slug: "",

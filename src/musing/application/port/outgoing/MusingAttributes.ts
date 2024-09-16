@@ -1,6 +1,6 @@
 export interface MusingAttributes {
   seq: number;
-  createdAt: string;
+  date: string;
   updatedAt: string;
   quote: string;
   from: string;

@@ -34,7 +34,7 @@ const EachDailyContent = ({ daily, userSelectNone }: EachDailyContentProps) => {
   const classes = useStyles();
   return <div className={classes.container} style={{ userSelect: userSelectNone ? "none" : "inherit" }}>
     <div className={classes.seq}>{daily.seq}.</div>
-    <div className={classes.date}>[{formatDateTime(daily.createdAt, "YYYY.MM.DD")}]</div>
+    <div className={classes.date}>[{formatDateTime(daily.date, "YYYY.MM.DD")}]</div>
     <div className={classes.title}>{daily.title}</div>
   </div>;
 };

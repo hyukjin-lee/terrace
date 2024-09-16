@@ -32,7 +32,7 @@ const useFetchToGetPrevAndNextWhenArticleIsLoadedBySSR = (article: BlogArticleDe
   const {seq} = article;
   const defaultData = {
     id: "",
-    createdAt: "",
+    date: "",
     title: "",
     uri: ""
   };
@@ -59,8 +59,8 @@ const BlogDetailPage = () => {
 
   const {prev, next} = useFetchToGetPrevAndNextWhenArticleIsLoadedBySSR(blogDetail);
 
-  const { title, content, createdAt, slug } = blogDetail;
-  const subPath = `${formatDateTime(createdAt, "/YYYY/MM/DD")}/${slug}`;
+  const { title, content, date, slug } = blogDetail;
+  const subPath = `${formatDateTime(date, "/YYYY/MM/DD")}/${slug}`;
 
   const theme = useTheme();
 

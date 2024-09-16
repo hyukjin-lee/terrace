@@ -1,6 +1,6 @@
 export interface BlogArticlePrevOrNext {
   id: string;
-  createdAt: string;
+  date: string;
   title: string;
   uri: string;
 }
@@ -8,7 +8,7 @@ export interface BlogArticlePrevOrNext {
 export interface BlogArticleDetailResponse {
   id: string;
   seq: number;
-  createdAt: string;
+  date: string;
   updatedAt: string;
   title: string;
   slug: string;
@@ -20,20 +20,20 @@ export interface BlogArticleDetailResponse {
 export const defaultBlogArticleDetailResponseDto: BlogArticleDetailResponse = {
   id: "",
   seq: -1,
-  createdAt: "",
+  date: "",
   updatedAt: "",
   title: "",
   slug: "",
   content: "",
   prev: {
     id: "",
-    createdAt: "",
+    date: "",
     title: "",
     uri: ""
   },
   next: {
     id: "",
-    createdAt: "",
+    date: "",
     title: "",
     uri: ""
   },

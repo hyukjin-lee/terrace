@@ -15,7 +15,7 @@ export class DailyService implements DailyFindAllUseCase, DailyGetUseCase{
       .then(it => ({
         id: "" + it.id,
         seq: it.attributes.seq,
-        createdAt: it.attributes.createdAt,
+        date: it.attributes.date,
         updatedAt: it.attributes.updatedAt,
         title: it.attributes.title,
         slug: it.attributes.slug,
@@ -28,8 +28,8 @@ export class DailyService implements DailyFindAllUseCase, DailyGetUseCase{
         data: data.data.map(it => ({
           id: "" + it.id,
           seq: it.attributes.seq,
-          createdAt: it.attributes.createdAt,
-          uri: Daily.createUri({createdAt: it.attributes.createdAt, slug: it.attributes.slug}),
+          date: it.attributes.date,
+          uri: Daily.createUri({date: it.attributes.date, slug: it.attributes.slug}),
           title: it.attributes.title,
         })),
         meta: data.meta,

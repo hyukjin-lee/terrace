@@ -23,18 +23,18 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
 interface Props {
   title: string;
   slug: string;
-  createdAt: string;
+  date: string;
 }
 
-const ArticleHead = ({ title, slug, createdAt }: Props) => {
+const ArticleHead = ({ title, slug, date }: Props) => {
   const classes = useStyles();
   return <div className={classes.container}>
     <div className={classes.head}>
-      <Link href={"/blog" + formatDateTime(createdAt, "/YYYY/MM/DD/") + slug} color="textPrimary" shallow={true}>
+      <Link href={"/blog" + formatDateTime(date, "/YYYY/MM/DD/") + slug} color="textPrimary" shallow={true}>
         <Typography variant="h1">{title}</Typography>
       </Link>
     </div >
-    <div className={classes.date}>{formatDateTime(createdAt, "YYYY / MM / DD")}</div>
+    <div className={classes.date}>{formatDateTime(date, "YYYY / MM / DD")}</div>
   </div >;
 };
 

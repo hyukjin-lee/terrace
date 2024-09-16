@@ -27,8 +27,8 @@ const DailyDetailPage = () => {
   const res = useSWR<DailyDetailResponse>(getApiKey(slugFromPath), () => getBySlug(slugFromPath));
   const dailyDetail = res.data || defaultDailyDetailResponseDto;
 
-  const { createdAt, slug } = dailyDetail;
-  const subPath = `${formatDateTime(createdAt, "/YYYY/MM/DD")}/${slug}`;
+  const { date, slug } = dailyDetail;
+  const subPath = `${formatDateTime(date, "/YYYY/MM/DD")}/${slug}`;
 
   const theme = useTheme();
   return <div>

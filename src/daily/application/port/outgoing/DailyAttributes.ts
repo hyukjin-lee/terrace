@@ -1,6 +1,6 @@
 export interface DailyAttributes {
   seq: number;
-  createdAt: string;
+  date: string;
   updatedAt: string;
   slug: string;
   title: string;

@@ -12,12 +12,12 @@ export class BlogPersistenceAdapter
 {
   constructor(private readonly axios: AxiosInstance) {}
 
-  private readonly listFields = ["seq", "title", "slug", "created_at"];
+  private readonly listFields = ["seq", "title", "slug", "date"];
   private readonly defaultPrevOrNext: BlogArticleListStrapi = {
     id: -1,
     attributes: {
       seq: -1,
-      createdAt: "",
+      date: "",
       updatedAt: "",
       slug: "",
       title: "",

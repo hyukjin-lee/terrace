@@ -32,7 +32,7 @@ const DailyDetail = ({ daily }: DailyDetailProps) => {
   const classes = useStyles();
   const {
     seq,
-    createdAt,
+    date,
     title,
     slug,
     content
@@ -42,9 +42,9 @@ const DailyDetail = ({ daily }: DailyDetailProps) => {
     <HeadTitle title={title} />
     <div className={classes.container}>
       <div className={classes.center}>
-        <Link href={"/daily" + formatDateTime(createdAt, "/YYYY/MM/DD/") + slug} shallow={true}>
+        <Link href={"/daily" + formatDateTime(date, "/YYYY/MM/DD/") + slug} shallow={true}>
           <Typography className={clsx(classes.serif, classes.title)}>
-            {seq}. [{formatDateTime(createdAt, "YYYY.MM.DD")}] {title}
+            {seq}. [{formatDateTime(date, "YYYY.MM.DD")}] {title}
           </Typography>
         </Link>
       </div>
